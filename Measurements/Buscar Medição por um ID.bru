@@ -1,0 +1,16 @@
+meta {
+  name: Buscar Medição por um ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/measurements/1/2025-11-07T18:00:00Z
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

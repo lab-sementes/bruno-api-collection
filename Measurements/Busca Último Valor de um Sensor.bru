@@ -1,0 +1,16 @@
+meta {
+  name: Busca Último Valor de um Sensor
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/measurements/3/latest
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

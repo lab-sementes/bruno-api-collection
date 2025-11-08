@@ -1,0 +1,20 @@
+meta {
+  name: Busca Agregações de Tempo
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/measurements/3/aggregates?bucket=1 sec
+  body: json
+  auth: inherit
+}
+
+params:query {
+  bucket: 1 sec
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

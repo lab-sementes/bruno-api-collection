@@ -1,0 +1,25 @@
+meta {
+  name: Novo Measurement
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url}}/measurements
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "sensorId": 3,
+    "ts": "2025-11-07T18:00:18Z",
+    "temperature": 28.5,
+    "humidity": 65.2
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

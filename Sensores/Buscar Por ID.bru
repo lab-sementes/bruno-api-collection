@@ -1,0 +1,16 @@
+meta {
+  name: Buscar Por ID
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/sensores/1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

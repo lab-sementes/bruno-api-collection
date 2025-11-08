@@ -1,0 +1,25 @@
+meta {
+  name: Atualizar Sensor
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{url}}/sensores/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "sensorName": "Sensor Temp Exemplo",
+    "sensorType": "DHT22",
+    "uniqueAddress": "0xABCDEF",
+    "status": "Ativado"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Buscar Por Address
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/sensores/address/{{address}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

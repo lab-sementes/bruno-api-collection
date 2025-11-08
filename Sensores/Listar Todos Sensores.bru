@@ -1,0 +1,16 @@
+meta {
+  name: Listar Todos Sensores
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/sensores
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Criar Sensor
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/sensores
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "sensorName": "Sensor 1",
+    "sensorType": "DS18B20",
+    "uniqueAddress": "0xABCDEF",
+    "status": "Ativado"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
